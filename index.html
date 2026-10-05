@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anantha Hariharan V — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="logo">
+    <span class="logo-bracket"></span>Portfolio<span class="logo-accent"></span><span class="logo-bracket"></span>
+  </div>
+  <ul class="menu">
+    <li><a href="#home" class="nav-link">Home</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#skills" class="nav-link">Skills</a></li>
+    <li><a href="#experience" class="nav-link">Experience</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="toggle" aria-label="Toggle theme">
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" class="mob-link">Home</a></li>
+    <li><a href="#about" class="mob-link">About</a></li>
+    <li><a href="#skills" class="mob-link">Skills</a></li>
+    <li><a href="#experience" class="mob-link">Experience</a></li>
+    <li><a href="#projects" class="mob-link">Projects</a></li>
+    <li><a href="#contact" class="mob-link">Contact</a></li>
+  </ul>
+</div>
+
+
+<!-- HOME -->
+<section id="home" class="home">
+  <div class="home-grid-overlay"></div>
+  <div class="home-content">
+    <div class="home-tag reveal">Frontend Developer</div>
+    <h1 class="home-title">
+      <span class="reveal delay-1">Anantha</span>
+      <span class="reveal delay-2 italic">Hariharan</span>
+      <span class="reveal delay-3">V<span class="title-dot">.</span></span>
+    </h1>
+    <p class="home-sub reveal delay-4">
+      Crafting responsive, pixel-perfect interfaces with HTML, CSS, JavaScript &amp; React. 
+      Obsessed with clean architecture and seamless UX.
+    </p>
+    <div class="btn-group reveal delay-5">
+      <a href="#projects" class="btn btn-primary">View Projects <span class="btn-arrow">→</span></a>
+      <a href="#contact" class="btn btn-ghost">Contact Me</a>
+    </div>
+    <div class="home-stats reveal delay-5">
+      <div class="stat"><span class="stat-num" data-count="1">1</span><span class="stat-label">Year of Experience</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-count="10">10</span><span class="stat-label">Skills</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num" data-count="4">4</span><span class="stat-label">Projects</span></div>
+    </div>
+  </div>
+  <div class="home-deco reveal delay-3">
+    <div class="deco-ring ring-1"></div>
+    <div class="deco-ring ring-2"></div>
+    <div class="deco-ring ring-3"></div>
+    <div class="deco-code">
+      <pre><span class="c-kw">const</span> dev = {
+  name: <span class="c-str">"Anantha Hariharan V"</span>,
+  role: <span class="c-str">"Frontend"</span>,
+  passion: <span class="c-str">"Clean UI"</span>,
+  status: <span class="c-accent">available</span>
+};</pre>
+    </div>
+  </div>
+  <div class="scroll-hint reveal delay-5">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about-section">
+  <div class="section-inner">
+    <div class="section-label">02 / About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2 class="section-title reveal">About <em>Me</em></h2>
+        <p class="about-text reveal delay-1">
+          I'm a self-driven Frontend Developer with a passion for turning ideas into 
+          interactive, beautiful web experiences. I care deeply about performance, 
+          accessibility, and the details that make UI feel alive.
+        </p>
+        <p class="about-text reveal delay-2">
+          When I'm not coding, I'm exploring new design trends, contributing to side 
+          projects, or leveling up my JavaScript skills. I believe great software 
+          starts with great empathy for the user.
+        </p>
+        <div class="about-info reveal delay-3">
+          <div class="info-row"><span class="info-key">Location</span><span class="info-val">Chennai, Tamil Nadu, India</span></div>
+          <div class="info-row"><span class="info-key">Role</span><span class="info-val">Frontend Developer</span></div>
+          <div class="info-row"><span class="info-key">Open to</span><span class="info-val">Full-time</span></div>
+        </div>
+        <a href="#contact" class="btn btn-primary reveal delay-4">Let's Connect <span class="btn-arrow">→</span></a>
+      </div>
+      <div class="about-right reveal delay-2">
+        <div class="avatar-wrapper">
+          <div class="avatar-border"></div>
+          <div class="avatar-inner">
+            <div class="avatar-initials"><img src="images/hari.jpeg" alt="Anantha Hariharan V" /></div>
+          </div>
+          <div class="avatar-badge">
+            <span class="badge-dot"></span> Available for work
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills-section">
+ <div class="section-inner">
+ 
+  <!-- Frontend -->
+    <div class="skills-group">
+    <h3 class="skills-group-title">FRONTEND</h3>
+    <div class="skills-box">
+      <div class="skills-grid">
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+          </div>
+          <span class="skill-name">HTML</span>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+          </div>
+          <span class="skill-name">CSS</span>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          </div>
+          <span class="skill-name">JavaScript</span>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+          </div>
+          <span class="skill-name">React.js</span>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+          </div>
+          <span class="skill-name">Tailwind</span>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+          </div>
+          <span class="skill-name">Bootstrap</span>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Backend & Database -->
+  <div class="skills-group">
+    <h3 class="skills-group-title">BACKEND &amp; DATABASE</h3>
+    <div class="skills-box">
+      <div class="skills-grid">
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+          </div>
+          <span class="skill-name">PHP</span>
+        </div>
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress">
+          </div>
+          <span class="skill-name">WordPress</span>
+        </div>
+ 
+       <div class="skill-card">
+         <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+         </div>
+         <span class="skill-name">MySQL</span>
+       </div>
+ 
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Tools -->
+  <div class="skills-group">
+    <h3 class="skills-group-title">TOOLS</h3>
+    <div class="skills-box">
+      <div class="skills-grid">
+ 
+        <div class="skill-card">
+          <div class="skill-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          </div>
+          <span class="skill-name">GitHub</span>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+ 
+</div>
+ 
+</section>
+
+
+
+<!-- EXPERIENCE ROADMAP -->
+<section id="experience" class="section exp-section">
+  <div class="section-inner">
+    <div class="section-label">03 / Experience</div>
+    <h2 class="section-title reveal">My <em>Roadmap</em></h2>
+    <p class="exp-intro reveal delay-1">From first line of HTML to shipping production apps. Here is how my frontend journey has unfolded.</p>
+
+    <!-- EDIT: replace titles, places and dates below with your real experience -->
+    <div class="roadmap" id="roadmap">
+      <div class="road-line"><div class="road-fill" id="roadFill"></div></div>
+
+      <div class="road-item">
+        <div class="road-node"><span>01</span></div>
+        <div class="road-card">
+          <span class="road-tag">Foundations</span>
+          <h3>HTML &amp; CSS</h3>
+          <p>Learned semantic markup, Flexbox, Grid and responsive layouts. Built my first static, mobile-friendly pages.</p>
+          <div class="road-chips"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div>
+        </div>
+      </div>
+
+      <div class="road-item">
+        <div class="road-node"><span>02</span></div>
+        <div class="road-card">
+          <span class="road-tag">Interactivity</span>
+          <h3>JavaScript</h3>
+          <p>Moved from static pages to dynamic ones: DOM, events, async code and browser storage. Shipped my Todo App with persistent tasks.</p>
+          <div class="road-chips"><span>ES6+</span><span>DOM</span><span>LocalStorage</span></div>
+        </div>
+      </div>
+
+      <div class="road-item">
+        <div class="road-node"><span>03</span></div>
+        <div class="road-card">
+          <span class="road-tag">Components</span>
+          <h3>React.js</h3>
+          <p>Started building reusable components and handling API data. Created a live Weather App with a 5-day forecast.</p>
+          <div class="road-chips"><span>React</span><span>Hooks</span><span>REST API</span></div>
+        </div>
+      </div>
+
+      <div class="road-item">
+        <div class="road-node"><span>04</span></div>
+        <div class="road-card">
+          <span class="road-tag">Production</span>
+          <h3>Next.js &amp; Tailwind CSS</h3>
+          <p>Built and deployed a full design agency landing page on Vercel, focused on speed, structure and clean UI.</p>
+          <div class="road-chips"><span>Next.js</span><span>Tailwind</span><span>Vercel</span></div>
+        </div>
+      </div>
+
+      <div class="road-item current">
+        <div class="road-node"><span>05</span></div>
+        <div class="road-card">
+          <span class="road-tag">Now &middot; 1 year</span>
+          <h3>Frontend Developer</h3>
+          <p>Building responsive interfaces, working with PHP, WordPress and SQL, and polishing the details that make UI feel alive.</p>
+          <div class="road-chips"><span>React</span><span>WordPress</span><span>SQL</span></div>
+        </div>
+      </div>
+
+      <div class="road-item goal">
+        <div class="road-node"><span>&#9733;</span></div>
+        <div class="road-card">
+          <span class="road-tag">Next stop</span>
+          <h3>Your team, full-time</h3>
+          <p>Open to a full-time frontend role where I can grow, ship and learn alongside great people.</p>
+          <button class="btn btn-primary" id="partyBtn" type="button">Celebrate with me &#127881;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects-section">
+  <div class="section-inner">
+    <div class="section-label">04 / Projects</div>
+    <h2 class="section-title reveal">Selected <em>Work</em></h2>
+    <p class="section-sub reveal delay-1">Things I've built — ideas brought to life</p>
+    <div class="projects-grid">
+
+      <div class="project-card reveal delay-1">
+        <div class="project-num">01</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">CSS</span>
+            <span class="tag">LocalStorage</span>
+          </div>
+          <h3 class="project-title">Todo App</h3>
+          <p class="project-desc">A sleek task management application with full CRUD functionality, drag-to-reorder, priority labels, and persistent storage.</p>
+          <div class="project-links">
+            <a href="https://hariharan1106.github.io/Todo_App/" class="proj-link" target="_blank">Live Demo <span>↗</span></a>
+            <a href="https://github.com/Hariharan1106/Todo_App" class="proj-link" target="_blank">GitHub <span>↗</span></a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+      <div class="project-card reveal delay-2">
+        <div class="project-num">02</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <h3 class="project-title">Portfolio</h3>
+          <p class="project-desc">This responsive personal portfolio website — featuring dark mode, smooth scrolling, animations, and a clean developer aesthetic.</p>
+          <div class="project-links">
+            <a href="https://hariharan1106.github.io/hariharan-portfolio/" class="proj-link" target="_blank">Live Demo <span>↗</span></a>
+            <a href="https://github.com/Hariharan1106/hariharan-portfolio" class="proj-link" target="_blank">GitHub <span>↗</span></a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+      <div class="project-card reveal delay-3">
+        <div class="project-num">03</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">API</span>
+            <span class="tag">OpenWeather</span>
+          </div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">Real-time weather dashboard using OpenWeatherMap API with location search, 5-day forecast, and animated weather icons.</p>
+          <div class="project-links">
+            <a href="https://react-project-weather-app-t6lo.vercel.app/" class="proj-link" target="_blank">Live Demo <span>↗</span></a>
+            <a href="https://github.com/Hariharan1106/ReactProject_WeatherApp" class="proj-link" target="_blank">GitHub <span>↗</span></a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+      <div class="project-card reveal delay-1">
+        <div class="project-num">04</div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">React</span>
+          </div>
+          <h3 class="project-title">Design Agency Landing Page</h3>
+          <p class="project-desc">A modern and responsive design agency homepage built with Next.js and Tailwind CSS. Features a Hero section, Services, Portfolio, Contact form, responsive layout, and smooth user experience.</p>
+          <div class="project-links">
+            <a href="https://design-agency-js.vercel.app/" class="proj-link" target="_blank">Live Demo <span>↗</span></a>
+            <a href="https://github.com/Hariharan1106/design-agency-js" class="proj-link" target="_blank">GitHub <span>↗</span></a>
+          </div>
+        </div>
+        <div class="project-accent"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="section-inner">
+    <div class="section-label">05 / Contact</div>
+    <h2 class="section-title reveal">Get In <em>Touch</em></h2>
+    <p class="section-sub reveal delay-1">Have a project in mind? Let's build something great.</p>
+    <div class="contact-grid">
+      <div class="contact-info reveal delay-1">
+        <div class="contact-item">
+          <span class="ci-label"> Email</span>
+          <a href="mailto:ananthahariharan116@gmail.com" class="ci-val">ananthahariharan116@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label"> GitHub</span>
+          <a href="https://github.com/Hariharan1106" class="ci-val" target="_blank" rel="noopener noreferrer">https://github.com/Hariharan1106</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label"> LinkedIn</span>
+          <a href="https://www.linkedin.com/in/anantha-hariharan-v-586723215/" class="ci-val" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/anantha-hariharan-v-586723215/</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label"> Status</span>
+          <span class="ci-val avail"><span class="pulse-dot"></span>Open to opportunities</span>
+        </div>
+      </div>
+      <form class="contact-form reveal delay-2" id="contactForm">
+        <div class="form-group">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-input" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-input form-textarea" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary text-white full-width">
+          Send Message <span class="btn-arrow">→</span>
+        </button>
+        <div class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Anantha Hariharan V</div>
+    <p class="footer-text">Designed &amp; built by Anantha Hariharan V</p>
+    <p class="footer-copy">© 2026 — All rights reserved</p>
+  </div>
+  <div class="footer-line"></div>
+</footer>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script src="portfolio.js"></script>
+</body>
+</html>
